@@ -102,7 +102,7 @@ jQuery(document).ready(function()
 
                     <?php if($desc = item('Dublin Core', 'Description', array('snippet'=>190))): ?>
 
-                        <div class="item-description"><?php echo $desc; ?><?php echo link_to_item(' ...more',(array('class'=>'show'))) ?></div>
+                        <div class="item-description"><?php echo $desc; ?><?php echo link_to_item(' ...mere',(array('class'=>'show'))) ?></div>
 
                     <?php endif; ?> 
 

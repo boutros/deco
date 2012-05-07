@@ -305,3 +305,47 @@ function deco_display_rss($feedUrl, $num = 3) {
            . "<p class='feed-content'>$description <a href=\"$link\">...more</a></p>";
     }
 }
+
+function find_random_item($params = array())
+{
+    $db = get_db();
+    $table = $db->getTable('Item');
+
+    $select = new Omeka_Db_Select;
+    $select->from(array('i'=>$db->Item), array('i.*'));
+    $select->from(array(), 'RAND() as rand');
+    $select->order('rand DESC');
+
+    if ($params['withImage']) {
+        $select->joinLeft(array('f'=>"$db->File"), 'f.item_id = i.id', array());
+        $select->where('f.has_derivative_image = 1');
+    }
+
+    $table->applySearchFilters($select, $params);
+
+    $select->limit(1);
+
+    $item = $table->fetchObject($select);
+
+    return $item;
+}
+function display_random_items_from_collection($featuredCollection, $nums)
+{
+    $html = '<h2>Bilder fra samlingen</h2>';
+    if ($featuredCollection) {
+
+        for ($i=0; $i<$nums; $i++) {
+        $item = find_random_item(array('withImage' => true, 'collection' => $featuredCollection->id));
+        if ($item) {
+
+        if (item_has_thumbnail($item)) {
+            $html .= link_to_item(item_square_thumbnail(array(), 0, $item), array('class'=>'image'), 'show', $item);
+        }
+         }
+     }
+
+    } else {
+        $html .= '<p>Samlingen finnes ikke</p>';
+    }
+    return $html;
+}
