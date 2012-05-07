@@ -54,15 +54,16 @@ jQuery(document).ready(function()
 <!-- end Awkward Gallery load/config -->
 	
         <!-- Featured Items aka Awkward Showcase image gallery/slideshow-->
-        <h2 class="awkward">Utstilte bilder</h2>
+        <h2 class="awkward">Utvalgte bilder fra basen</h2>
  		<div id="showcase" class="showcase">
  		<?php deco_awkward_gallery();?>
  		</div><!-- end featured items -->
 	
         <!-- Featured Exhibit -->
-        <div id="featured-exhibits" style="margin-top:1.5em;">
-            <?php echo deco_exhibit_builder_display_random_featured_exhibit(); ?>
-        </div><!-- end featured collection -->
+        
+        
+
+        <!-- end featured collection -->
         
     	<!-- Featured Collection -->
     	<div id="featured-collection">    
@@ -79,7 +80,7 @@ jQuery(document).ready(function()
         <div id="recent-items">   
         
         
-            <h2>Nye ressurser</h2>
+            <h2>Nye bilder</h2>
             <?php 
             $deco_get_recent_number=deco_get_recent_number();
             $items = get_items(array('recent'=>true, 'withImage'=>true), $deco_get_recent_number);?>
@@ -114,7 +115,7 @@ jQuery(document).ready(function()
 
             <?php endif; ?>
 	
-            <p class="view-items-link"><a href="<?php echo html_escape(uri('items')); ?>">Se alle ressurser</a></p>
+            <p class="view-items-link"><a href="<?php echo html_escape(uri('items')); ?>">Bla i alle bilder</a></p>
             
         </div><!--end recent-items -->
         
