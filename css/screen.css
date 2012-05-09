@@ -95,7 +95,7 @@ body {font: 62.5% "Helvetica Neue",Helvetica, Arial, sans-serif; color: #333;}
 		.element-text-empty {font-size:1.2em; line-height:1.5em;margin:0;}
 		body.show .element-text {}
 						
-		.browse .item {border-bottom:1px dotted #ccc;padding-bottom:18px; margin-bottom:18px;overflow:hidden; zoom:1;}
+		.browse .item {clear:left;border-bottom:1px dotted #ccc;padding-bottom:18px; margin-bottom:18px;overflow:hidden; zoom:1;}
 			.browse .item h2 {float:left; width: 198px; margin-right:18px;}
 			.browse .item img {float:right; width: 198px; height: 198px;}
 			.browse .item-description {float:left; width: 414px;}
@@ -245,7 +245,7 @@ border-radius: 3px; }
 	#site-title a:visited {text-decoration:none;color:#555;}
 	
 	#site-title .tagline{font-size: 2em; color:#555; line-height: .5em; font-size: .5em;padding-bottom: 10px;}
-	#site-title h2{font-size: 4em;font-weight:normal;line-height:1em;}
+	#site-title h2{font-size: 2em;font-weight:normal;line-height:1em;}
 
 	
 	#search-container {float:right;width: 210px; height:37px; text-align:right;padding:14px 7px 7px 7px;clear:none;margin-bottom: 4px;}
@@ -412,7 +412,7 @@ margin-top: 30px;}
 	#previous-item {}
 	
 		/* Search Results */
-		#primary form {padding:10px 0;overflow:hidden;}
+		#primary form {padding:10px 0;}
 		#primary form .field {font-size:1.2em; line-height:1.5em; margin-bottom:1.5em;clear:both;}
 		#primary form .field label {display:block;float:left;margin-right:5px;}		
 		input#featured, input#public  {display:block;float:left;}

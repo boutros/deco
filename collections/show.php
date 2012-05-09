@@ -12,6 +12,7 @@
       <ul>
         <li><a href='/omeka/exhibits/show/abildsoe-gaard'>Abildsø gård</a>
         <li><a href='/omeka/exhibits/show/spillet-om-sarabraaten'>Spillet om Sarabråten</a>
+        <li><a href="/omeka/exhibits/show/boeler-bibliotek">Bøler bibliotek</a>
       </ul>
     <?php endif; ?>
 

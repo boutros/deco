@@ -73,7 +73,7 @@ display_css();
 		<div id="header">
 		<div id="site-title">
 		<h2><?php echo link_to_home_page(); ?></h2>
-		<div class="tagline"><?php echo deco_get_tagline();?></div>
+
 		</div>
 		</div>
 

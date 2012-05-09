@@ -10,8 +10,8 @@ background-color: #ddd;
 #footer {background:transparent;text-shadow: 0 -1px 1px #000;}
 #content{border-color: #ccc;border-width: 1px}
 
-#site-title a {color:#333; font-family: 'Lobster';text-shadow: 0 -1px 1px #eaeaea;text-transform: capitalize;-webkit-text-stroke: 1px transparent}
-#site-description h3 {color:#333; font-family: 'Lobster';text-shadow: 0 -1px 1px #fff;}
+#site-title a {color:#333; font-family: 'Arial';text-shadow: 0 -1px 1px #eaeaea;text-transform: capitalize;-webkit-text-stroke: 1px transparent}
+#site-description h3 {color:#333; font-family: 'Arial';text-shadow: 0 -1px 1px #fff;}
 h1, h2, h1 a, h2 a, h3, h3 a:link, .hTagcloud a{color:#333; font-family: 'Cuprum';text-shadow: 0 -1px 1px #eaeaea;font-weight: normal;-webkit-text-stroke: 1px transparent}
 
 #primary-nav a {

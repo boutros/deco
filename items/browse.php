@@ -43,7 +43,7 @@
 				</div><!-- end class="item-meta" -->
 			</div><!-- end class="item hentry" -->
 		<?php endwhile; ?>
-	
+
 		<div id="pagination-bottom" class="pagination"><?php echo pagination_links(); ?></div>
 		
 		<?php echo plugin_append_to_items_browse(); ?>
