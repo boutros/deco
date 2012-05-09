@@ -77,6 +77,17 @@ jQuery(document).ready(function()
     <div id="secondary">
 
     <!-- Recent Items --> 
+        <div style="margin-bottom:30px">
+            <h2>Lokalhistoriske bildesamlinger</h2>
+            <h3><a href="/omeka/collections/show/2">Groruddalen</a></h3>
+            <h3><a href="/omeka/collections/show/3">Grefsen Kjelsås Nydalen</a></h3>
+            <h3><a href="/omeka/collections/show/7">Hellerud</a></h3>
+            <h3><a href="/omeka/collections/show/5">Sogn</a></h3>
+            <h3><a href="/omeka/collections/show/4">Søndre Aker</a></h3>
+            <h3><a href="/omeka/collections/show/6">Vindern</a></h3>
+            <h3><a href="/omeka/collections/show/1">Østensjø</a></h3>
+        </div>
+
         <div id="recent-items">   
         
         
