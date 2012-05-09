@@ -62,12 +62,12 @@ display_css();
 		
 		<div id="primary-nav">
 			<ul class="navigation">
-			<?php echo public_nav_main(array('Bilder' => uri('items'), 'Samlinger'=>uri('collections'))); ?>
+			<?php echo public_nav_main(array('Bilder' => uri('items'), 'Samlinger'=>uri('collections'), 'Avansert søk'=>'/omeka/items/advanced-search')); ?>
 			</ul>
 		<!-- search --> 
 		<div id="search-container">
 			<?php echo simple_search(); ?>
-			<?php echo link_to_advanced_search(); ?>
+			<?php //echo link_to_advanced_search(); ?>
 		</div>
 		</div><!-- end primary-nav -->
 		<div id="header">

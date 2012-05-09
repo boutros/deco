@@ -248,7 +248,7 @@ border-radius: 3px; }
 	#site-title h2{font-size: 2em;font-weight:normal;line-height:1em;}
 
 	
-	#search-container {float:right;width: 210px; height:37px; text-align:right;padding:14px 7px 7px 7px;clear:none;margin-bottom: 4px;}
+	#search-container {float:right;width: 210px;text-align:right;padding:14px 7px 7px 7px;clear:none;margin-bottom: 4px;}
 		form#simple-search {margin:0 0 4px 0;}
 		#search-container h2 {display:none;}
 		#search-container input {border:1px solid #ccc; background:#fafafa; padding:3px;}
