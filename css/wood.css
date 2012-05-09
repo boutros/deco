@@ -53,13 +53,9 @@ box-shadow: 0 0 5px #999999 inset;
 }
 
 #search-container input {
-    background: url('../images/search.gif') 95% 50% no-repeat  #FAFAFA;
-    border: 0px none transparent;
-    border-radius: 10px;
-    box-shadow: 0 0 1px #000000 inset;
     padding-left:10px;
-    
 }
+
 #search-container #submit_search{display: none; visibility: hidden collapse;}
 
 #fotografi-item-type-metadata-giver { display:none; }
