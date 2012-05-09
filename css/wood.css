@@ -63,3 +63,5 @@ box-shadow: 0 0 5px #999999 inset;
 #search-container #submit_search{display: none; visibility: hidden collapse;}
 
 #fotografi-item-type-metadata-giver { display:none; }
+
+img.imagecoll {margin: 4px;}
