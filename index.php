@@ -100,12 +100,6 @@ jQuery(document).ready(function()
                         </div>
                     <?php endif; ?>
 
-                    <?php if($desc = item('Dublin Core', 'Description', array('snippet'=>190))): ?>
-
-                        <div class="item-description"><?php echo $desc; ?><?php echo link_to_item(' ...mere',(array('class'=>'show'))) ?></div>
-
-                    <?php endif; ?> 
-
                 </div>
                 <?php endwhile; ?>  
             </div>
