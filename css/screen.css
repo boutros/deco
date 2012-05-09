@@ -321,8 +321,8 @@ margin-top: 30px;}
 
 	
 	#recent-items {}
-		#recent-items .item {overflow:hidden; zoom:1;border-bottom:1px solid #ccc;margin-bottom:18px;}
-		#recent-items .item img {float:right; margin-left:18px; margin-bottom:18px; border:1px solid #ccc; padding: 2px;height:80px; width:80px;}
+		#recent-items .item {overflow:hidden; zoom:1;margin-bottom:18px;}
+		#recent-items .item img {float:left; margin-left:18px; margin-bottom:18px; border:0; padding: 2px;height:80px; width:80px;}
 		#recent-items .items-list{clear:both}
 	
 	#featured-exhibit {margin-bottom:34px}
