@@ -337,7 +337,7 @@ margin-top: 30px;}
     
     body#home #content h2 {color:#333; font-size: 2.4em; line-height:1em;margin-bottom: 0.5em;text-transform:uppercase;letter-spacing:.1em;background:#fff;border-bottom: 1px solid #ccc;}
 	body#home #content #top h2 {margin-left:-18px; margin-right:-18px; padding-left:18px;padding-top:3px; padding-bottom:3px;}
-	body#home #content #primary h2 {font-size: 3.5em;max-width:470px; min-width:234px;;margin-left:-18px; padding-left:18px;padding-top:3px; padding-bottom:3px;}
+	body#home #content #primary h2 {font-size: 2.8em;max-width:470px; min-width:234px;;margin-left:-18px; padding-left:18px;padding-top:3px; padding-bottom:3px;}
 	body#home #content #secondary h2 {max-width:355px; min-width:234px;;float:right;margin-right:-18px; padding-right:18px;padding-top:3px; padding-bottom:3px;padding-left:3px}
 	body#home #content h3 {font-size: 1.8em; line-height:2em;margin-bottom:0;}
 	#items.show h3 {margin:0;}

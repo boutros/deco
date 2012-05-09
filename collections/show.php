@@ -7,14 +7,6 @@
         <h2>Om samlingen</h2>
         <div class="element-text"><?php echo nls2p(collection('Description')); ?></div>
     </div><!-- end description -->
-    <h2>Utstillinger</h2>
-    <?php if(collection('id') == 1): ?>
-      <ul>
-        <li><a href='/omeka/exhibits/show/abildsoe-gaard'>Abildsø gård</a>
-        <li><a href='/omeka/exhibits/show/spillet-om-sarabraaten'>Spillet om Sarabråten</a>
-        <li><a href="/omeka/exhibits/show/boeler-bibliotek">Bøler bibliotek</a>
-      </ul>
-    <?php endif; ?>
 
                 <?php if(collection_has_collectors()): ?>
                       <?php echo '<div id="collectors" class="element">';?>
