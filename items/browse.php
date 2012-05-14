@@ -2,7 +2,14 @@
 
 	<div id="primary">
 		
-		<h1>Bla i ressurser (<?php echo total_results(); ?> totalt)</h1>
+		<h1>Bla i bilder (<?php echo total_results(); ?> totalt)</h1>
+		<?php
+  		  if ($collection = get_collection_by_id($_GET['collection'])) {
+        		$html .= "<h2 style='margin-bottom:10px'>Samling: ".$collection->name;
+        		$html .= '</h2>';
+    		}
+			echo $html;
+		?>
 
 		<ul class="items-nav navigation" id="secondary-nav">
 			<?php echo nav(array('Bla i bilder' => uri('items'), __('Browse by Tag') => uri('items/tags'))); ?>
