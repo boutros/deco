@@ -8,6 +8,35 @@
         <div class="element-text"><?php echo nls2p(collection('Description')); ?></div>
     </div><!-- end description -->
 
+    <div id="collection_search" class="element">
+      <h2>Søk i <?php echo collection('Name'); ?></h2>
+      <?php
+      if ($formActionUri):
+        $formAttributes['action'] = $formActionUri;
+      else: 
+        $formAttributes['action'] = uri(array('controller'=>'items',
+                                          'action'=>'browse'));
+      endif;
+      $formAttributes['method'] = 'GET';
+      ?>
+    <form <?php echo _tag_attributes($formAttributes); ?>>
+        <div id="search-keywords" class="field">
+            
+            <div class="inputs">
+            <?php echo text(array(
+                    'name' => 'search',
+                    'size' => '40',
+                    'id' => 'keyword-search',
+                    'class' => 'textinput'), @$_REQUEST['search']);
+                    ?>
+            <input id="collection-search" value="<?php echo collection('id');?>" name="collection" type="hidden"/>
+            <input type="submit" class="submit" name="submit_search" id="submit_search_advanced" value="<?php echo __('Search'); ?>" />
+            </div>
+        </div>
+
+    </div>
+
+
                 <?php if(collection_has_collectors()): ?>
                       <?php echo '<div id="collectors" class="element">';?>
        				  <?php echo'<h2>Collector(s)</h2>';?> 

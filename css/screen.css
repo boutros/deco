@@ -423,6 +423,7 @@ margin-top: 30px;}
 		
 		/* Contribution */
 		body.contribution label {width:100%;float:left; margin:10px 0 3px 0;font-size: 9pt;}
+		body.contribution textarea {max-width: 500px;}
 		
 		body.contribution div#wrap div#content div#primary form fieldset#contribution-confirm-submit div.inputs label{width:auto;float: none;}
 		body.contribution div#wrap div#content div#primary form fieldset#contribution-confirm-submit div.inputs label{width:auto;float: none;}
