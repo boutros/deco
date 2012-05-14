@@ -20,6 +20,8 @@ enableContributionAjaxForm(<?php echo js_escape(uri('contribution/type-form')); 
 <?php echo flash(); ?>
     
     <h1><?php echo $head['title']; ?></h1>
+    <p>Mange av feltene er knyttet til et autoritetsregister. Er det noen valg som mangler i nedtrekkslistene,<br>
+        så skriv det i feltet 'andre kommentarer' nederst på siden. F.eks slik: "Person: Halvorsen, Knut."</p>
     <form method="post" action="" enctype="multipart/form-data">
         <fieldset id="contribution-item-metadata">
             <div class="inputs" style="display:none">
