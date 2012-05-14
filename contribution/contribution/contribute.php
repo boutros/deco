@@ -29,7 +29,7 @@ enableContributionAjaxForm(<?php echo js_escape(uri('contribution/type-form')); 
                 <?php echo contribution_select_type(array( 'name' => 'contribution_type', 'id' => 'contribution-type'), $_POST['contribution_type']); ?>
                 <input type="submit" name="submit-type" id="submit-type" value="Select" />
             </div>
-            <div id="contribution-type-form">
+            <div id="contribution-type-form" style="margin-bottom:10px">
             <?php if (isset($typeForm)): echo $typeForm; endif; ?>
             </div>
         </fieldset>
@@ -61,14 +61,14 @@ enableContributionAjaxForm(<?php echo js_escape(uri('contribution/type-form')); 
             <div id="captcha" class="inputs"><?php echo $captchaScript; ?></div>
             <div class="inputs">
                 <?php echo $this->formCheckbox('contribution-public', $_POST['contribution-public'], null, array('1', '0')); ?>
-                <?php echo $this->formLabel('contribution-public', 'Publish my contribution on the web.'); ?>
+                <?php echo $this->formLabel('contribution-public', 'Offentliggjør bildet på internet.'); ?>
             </div>
-            <p>In order to contribute, you must read and agree to the <a href="<?php echo uri('contribution/terms') ?>" target="_blank">Terms and Conditions.</a></p>
+            <p>For å bidra med et bilde må du lese og godta <a href="<?php echo uri('contribution/terms') ?>" target="_blank">våre vilkår.</a></p>
             <div class="inputs">
                 <?php echo $this->formCheckbox('terms-agree', $_POST['terms-agree'], null, array('1', '0')); ?>
-                <?php echo $this->formLabel('terms-agree', 'I agree to the Terms and Conditions.'); ?>
+                <?php echo $this->formLabel('terms-agree', 'Jeg godtar vilkårene for å bidra.'); ?>
             </div>
-            <?php echo $this->formSubmit('form-submit', 'Contribute', array('class' => 'submitinput')); ?>
+            <?php echo $this->formSubmit('form-submit', 'Send inn bidrag', array('class' => 'submitinput')); ?>
         </fieldset>
     </form>
 </div>
