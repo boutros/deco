@@ -21,7 +21,7 @@ enableContributionAjaxForm(<?php echo js_escape(uri('contribution/type-form')); 
     
     <h1><?php echo $head['title']; ?></h1>
     <form method="post" action="" enctype="multipart/form-data">
-        <fieldset id="contribution-item-metadata">
+        <fieldset id="contribution-item-metadata" >
             <div class="inputs">
                   <label for="contribution-type">Type bidrag:</label>
                 <?php echo contribution_select_type(array( 'name' => 'contribution_type', 'id' => 'contribution-type'), $_POST['contribution_type']); ?>

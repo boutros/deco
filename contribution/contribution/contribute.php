@@ -22,7 +22,7 @@ enableContributionAjaxForm(<?php echo js_escape(uri('contribution/type-form')); 
     <h1><?php echo $head['title']; ?></h1>
     <form method="post" action="" enctype="multipart/form-data">
         <fieldset id="contribution-item-metadata">
-            <div class="inputs">
+            <div class="inputs" style="display:none">
                   <label for="contribution-type">Type bidrag:</label>
                 <?php echo contribution_select_type(array( 'name' => 'contribution_type', 'id' => 'contribution-type'), $_POST['contribution_type']); ?>
                 <input type="submit" name="submit-type" id="submit-type" value="Select" />
@@ -32,7 +32,7 @@ enableContributionAjaxForm(<?php echo js_escape(uri('contribution/type-form')); 
             </div>
         </fieldset>
         <fieldset id="contribution-contributor-metadata" <?php if (!isset($typeForm)) { echo 'style="display: none;"'; }?>>
-            <legend>Informasjon om degg</legend>
+            <legend>Informasjon om deg</legend>
             <div class="field">
                 <label for="contributor-name">Navn</label>
                 <div class="inputs">

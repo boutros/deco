@@ -1,6 +1,6 @@
 <?php head(); ?>
 <div id="primary">
-	<h1>Thank You for Contributing!</h1>
-	<p>Your contribution will show up in the archive once an administrator approves it. Meanwhile, feel free to <?php echo contribution_link_to_contribute('make another contribution'); ?> or <a href="<?php echo uri('items/browse'); ?>">browse the archive</a>.</p>
+	<h1>Takk for ditt bidrag!</h1>
+	<p>Bildet ditt vil vises i basen så snart en administrator har godkjent det. I mellomtiden er du <?php echo contribution_link_to_contribute('velkommen til å bidra med flere bilder'); ?> eller <a href="<?php echo uri('items/browse'); ?>">bla i basen</a>.</p>
 </div>
 <?php foot(); ?>
