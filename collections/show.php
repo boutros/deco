@@ -33,7 +33,6 @@
             <input type="submit" class="submit" name="submit_search" id="submit_search_advanced" value="<?php echo __('Search'); ?>" />
             </div>
         </div>
-
     </div>
 
 

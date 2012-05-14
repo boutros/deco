@@ -4,10 +4,31 @@
         <div id="site-description">
             <h2>Om bildebasen</h2> <h3><?php echo settings('site_title'); ?></h3>    
             <?php echo deco_get_about(); ?>
-            <div id="search2">
-                <?php echo simple_search(); ?>
-            </div>
             
+      <div id="hovedside_search" class="element">
+      <?php
+      if ($formActionUri):
+        $formAttributes['action'] = $formActionUri;
+      else: 
+        $formAttributes['action'] = uri(array('controller'=>'items',
+                                          'action'=>'browse'));
+      endif;
+      $formAttributes['method'] = 'GET';
+      ?>
+    <form <?php echo _tag_attributes($formAttributes); ?>>
+        <div id="search-keywords" class="field">
+            
+            <div class="inputs">
+            <?php echo text(array(
+                    'name' => 'search',
+                    'size' => '40',
+                    'id' => 'keyword-search',
+                    'class' => 'textinput'), @$_REQUEST['search']);
+                    ?>
+            <input type="submit" class="submit" name="submit_search" id="submit_search_advanced" value="<?php echo __('Search'); ?>" />
+            </div>
+        </div>
+    </div>
             
             <!--uncomment below to add an RSS feed to homepage or wait until next release
             <h2>External Feed</h2>
