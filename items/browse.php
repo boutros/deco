@@ -5,8 +5,8 @@
 		<h1>Bla i bilder (<?php echo total_results(); ?> totalt)</h1>
 		<?php
   		  if ($collection = get_collection_by_id($_GET['collection'])) {
-        		$html .= "<h2 style='margin-bottom:10px'>Samling: ".$collection->name;
-        		$html .= '</h2>';
+        		$html .= "<h2 style='margin-bottom:10px'>Samling: <a href='/omeka/collections/show/".$collection->id;
+        		$html .= "'>".$collection->name."</a></h2>";
     		}
 			echo $html;
 		?>
