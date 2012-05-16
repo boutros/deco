@@ -33,12 +33,17 @@ jQuery(document).ready(function () {
         "Original Format",
         "Participants",
         "Physical Dimensions",
+        "Relasjon",
+        "Språk",
         "Standards",
         "Subject Heading",
         "Subject Line",
         "Time Summary",
         "Transcription",
-        "URL"
+        "Type",
+        "URL",
+        "Varighet",
+        "Vannmerke"
     ];
     jQuery.each(blackListGroups, function (index, value) {
         jQuery("#advanced-0-element_id optgroup[label='" + value + "']").remove();

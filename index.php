@@ -81,7 +81,18 @@ jQuery(document).ready(function()
  		</div><!-- end featured items -->
 	
         <!-- Featured Exhibit -->
-        
+        <!-- FIX Petter-->
+        <h2>Utvalgte bilder</h2>
+        <?php
+            $itemsf = deco_get_random_featured_items(9);
+            set_items_for_loop($itemsf);
+            while(loop_items()): 
+                if (item_has_thumbnail($item)) {
+                    $t = item('Dublin Core', 'Title');
+                    $html .= link_to_item(item_square_thumbnail(array('class' =>'imagecoll', 'title'=>$t), 0, $item), array('class'=>'image'), 'show', item);
+                }
+            endwhile;
+            echo $html; ?>
         
 
         <!-- end featured collection -->
