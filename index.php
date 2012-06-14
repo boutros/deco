@@ -89,7 +89,7 @@ jQuery(document).ready(function()
             while(loop_items()): 
                 if (item_has_thumbnail($item)) {
                     $t = item('Dublin Core', 'Title');
-                    $html .= link_to_item(item_square_thumbnail(array('class' =>'imagecoll', 'title'=>$t), 0, $item), array('class'=>'image'), 'show', item);
+                    $html .= link_to_item(item_square_thumbnail(array('class' =>'imagecoll', 'title'=>$t), 0, $item), array('class'=>'image'), 'show', $item);
                 }
             endwhile;
             echo $html; ?>

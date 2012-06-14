@@ -12,16 +12,9 @@
 <div id="sidebar">	
 
 <!-- download links -->
-	<div id="itemfiles" class="element">
-	    <h3>Fil(er)</h3>
-		<div class="element-text">
-		    <?php 
-		    while(loop_files_for_item()):$file = get_current_file();
-			echo '<div style="clear:both;padding:2px;"><a href="'. file_download_uri($file). '" class="download-file">'. $file->original_filename. '</a>&nbsp; ('.item_file('MIME Type').')</div> ';
-			endwhile;
-			?>
-		</div>
-	</div>
+	<!--
+	removed PETTER
+	-->
 <!-- end download links -->
 	
 <!-- If the item belongs to a collection, the following creates a link to that collection. -->
