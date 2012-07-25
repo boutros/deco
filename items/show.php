@@ -150,12 +150,14 @@
 	
 </div><!-- end primary -->
 	<ul class="item-pagination navigation">
-	<li id="previous-item" class="previous">
+<!--
+  <li id="previous-item" class="previous">
 		<?php echo link_to_previous_item('Forrige bilde'); ?>
 	</li>
 	<li id="next-item" class="next">
 		<?php echo link_to_next_item('Neste bilde'); ?>
 	</li>
 	</ul>
+-->
 
 <?php foot(); ?>
