@@ -339,7 +339,9 @@ function display_random_items_from_collection($featuredCollection, $nums)
         if ($item) {
 
         if (item_has_thumbnail($item)) {
-            $html .= link_to_item(item_square_thumbnail(array('class' =>'imagecoll'), 0, $item), array('class'=>'image'), 'show', $item);
+            set_current_item($item);
+            $title = item('Dublin Core','Title');
+            $html .= link_to_item(item_square_thumbnail(array('class' =>'imagecoll'), 0, $item), array('class'=>'image', 'title'=> $title), 'show', $item);
         }
          }
      }
