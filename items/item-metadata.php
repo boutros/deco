@@ -14,9 +14,13 @@
         // $setName contains the 'pretty' version of it that may be named differently
         // than the actual element set.
         ?>
+        <?php if ($info['elementName'] == 'Date' & (count($info['texts']) > 1)):?>
+            <div class="element-text"><?php echo $info['texts'][0]; ?> - <?php echo end($info['texts']); ?></div>
+        <?php else: ?>
         <?php foreach ($info['texts'] as $text): ?>
             <div class="element-text"><?php echo $text; ?></div>
         <?php endforeach; ?>
+        <?php endif; ?>
         <?php endif; ?>
     </div><!-- end element -->
     <?php endif; ?>
