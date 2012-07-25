@@ -40,7 +40,8 @@
 				<?php endif; ?>
 
 				<?php if (item_has_tags()): ?>
-    				<div class="tags"><p><strong>Stikkord:</strong>
+            <div style="clear:left"></div>
+    				<div class="tags"><p><strong>Stikkord:</strong><br/>
     				<?php echo item_tags_as_string(); ?></p>
     				</div>
 				<?php endif; ?>
