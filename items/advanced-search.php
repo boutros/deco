@@ -1,58 +1,3 @@
-<?php echo js('jquery'); ?>
-<script type="text/javascript" charset="utf-8">
-jQuery(document).ready(function () {
-    var blackListGroups = [
-        "tada",
-        "Contribution Form"
-    ];
-    var blackListElements = [
-        "Andre kommentarer",
-        "BCC",
-        "Bibliography",
-        "BildeID",
-        "Biographical Text",
-        "Birth Date",
-        "Birthplace",
-        "Bit Rate/Frequency",
-        "CC",
-        "Death Date",
-        "Director",
-        "Komprimering",
-        "Email Body",
-        "Event Type",
-        "Fra",
-        "Interviewee",
-        "Interviewer",
-        "Lesson Plan Text",
-        "Local URL",
-        "Location",
-        "Materials",
-        "Number of Attachments",
-        "Objectives",
-        "Occupation",
-        "Original Format",
-        "Participants",
-        "Physical Dimensions",
-        "Relasjon",
-        "Språk",
-        "Standards",
-        "Subject Heading",
-        "Subject Line",
-        "Time Summary",
-        "Transcription",
-        "Type",
-        "URL",
-        "Varighet",
-        "Vannmerke"
-    ];
-    jQuery.each(blackListGroups, function (index, value) {
-        jQuery("#advanced-0-element_id optgroup[label='" + value + "']").remove();
-    });
-    jQuery.each(blackListElements, function (index, value) {
-        jQuery("#advanced-0-element_id option[label='" + value + "']").remove();
-    });
-});
-</script>
 
 <?php
 $pageTitle = __('Advanced Search');
@@ -173,3 +118,58 @@ $formAttributes['method'] = 'GET';
 </div> <!-- Close 'primary' div. -->
 <?php foot(); ?>
 <?php endif; ?>
+
+<script type="text/javascript" charset="utf-8">
+jQuery(document).ready(function () {
+    var blackListGroups = [
+        "tada",
+        "Contribution Form"
+    ];
+    var blackListElements = [
+        "Andre kommentarer",
+        "BCC",
+        "Bibliography",
+        "BildeID",
+        "Biographical Text",
+        "Birth Date",
+        "Birthplace",
+        "Bit Rate/Frequency",
+        "CC",
+        "Death Date",
+        "Director",
+        "Komprimering",
+        "Email Body",
+        "Event Type",
+        "Fra",
+        "Interviewee",
+        "Interviewer",
+        "Lesson Plan Text",
+        "Local URL",
+        "Location",
+        "Materials",
+        "Number of Attachments",
+        "Objectives",
+        "Occupation",
+        "Original Format",
+        "Participants",
+        "Physical Dimensions",
+        "Relasjon",
+        "Språk",
+        "Standards",
+        "Subject Heading",
+        "Subject Line",
+        "Time Summary",
+        "Transcription",
+        "Type",
+        "URL",
+        "Varighet",
+        "Vannmerke"
+    ];
+    jQuery.each(blackListGroups, function (index, value) {
+        jQuery("#advanced-0-element_id optgroup[label='" + value + "']").remove();
+    });
+    jQuery.each(blackListElements, function (index, value) {
+        jQuery("#advanced-0-element_id option[label='" + value + "']").remove();
+    });
+});
+</script>
