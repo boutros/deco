@@ -45,6 +45,12 @@
     				<?php echo item_tags_as_string(); ?></p>
     				</div>
 				<?php endif; ?>
+
+        <?php $id = item('Dublin Core','Identifier') ?>
+          <div style="clear:left"></div>
+            <div class="tags"><p><strong>BildeID:</strong>
+            <?php echo $id; ?></p>
+          </div>
 				
 				<?php echo plugin_append_to_items_browse_each(); ?>
 
