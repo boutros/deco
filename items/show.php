@@ -139,10 +139,10 @@
 <!-- the edit button for logged in superusers and admins -->
 <? $current = Omeka_Context::getInstance()->getCurrentUser();
         if ($current->role == 'super') {
-                echo '<p><a class="edit-button" href="'. html_escape(uri('admin/items/edit/')).item('ID').'">Edit this item...</a></p>';
+                echo '<p><a class="edit-button" href="'. html_escape(uri('admin/items/edit/')).item('ID').'">Rediger dette bildet...</a></p>';
                 }
         elseif($current->role == 'admin'){
-                echo '<p><a class="edit-button" href="'. html_escape(uri('admin/items/edit/')).item('ID').'">Edit this item...</a></p>';
+                echo '<p><a class="edit-button" href="'. html_escape(uri('admin/items/edit/')).item('ID').'">Rediger dette bildet...</a></p>';
                 }
 ?> 
 <!-- end edit button -->
